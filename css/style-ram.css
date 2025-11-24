@@ -1,0 +1,50 @@
+/* ----------------------------------------------------
+   HERO SECTION
+----------------------------------------------------- */
+
+/* GLOBAL DEFAULT (Laptop + Desktop) */
+.home-banner {height: 720px;background: url("../images/banner-image.png") center/cover no-repeat;position: relative;color: #fff;padding: 80px 40px;border-radius: 40px;overflow: hidden;}
+.hero-content {position: relative;z-index: 2;display: flex;flex-direction: column;gap: 30px;text-align: left;}
+/* TITLE */
+.hero-title {line-height: 1.3;font-weight: 500;margin: 0;}
+/* DESCRIPTION */
+.hero-description {font-size: 1.25rem;line-height: 1.6;max-width: 36rem;color: #FAFDFF;margin: 0;}
+/* BUTTONS */
+.hero-buttons {display: flex;gap: 30px;width: 100%;}
+.btn-started,
+.btn-more {font-size: 1.125rem;font-weight: 500;border-radius: 30px;text-decoration: none;min-height: 3.625rem;max-width: 12.55rem;display: flex;align-items: center;justify-content: center;transition: ease-out 0.9s;flex-direction: row;width: 100%;height: 100%;}
+.btn-started {background: #519B87;color: #fff;}
+.btn-started:hover {background: #3e7d6c;}
+.btn-more {background: #ffffff;color: #04151F;}
+.btn-more:hover {background: #e7e7e7;}
+/* YEARS EXPERIENCE */
+	.exp-number {font-size: 2.875rem;font-weight: 500;margin: 0;}
+	.exp-number span {color: #2AC184;}
+	.exp-text {margin: 0;font-size: 1.125rem;font-weight: 500;color: #ffffff;}
+/* ----------------------------------------------------
+   RESPONSIVE
+----------------------------------------------------- */
+@media (min-width: 1200px) {
+    .hero-title {font-size: 3.125rem;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-banner {height: auto;}
+	.hero-title {font-size: 3.25rem;}
+	.hero-description {font-size: 16px;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-banner {height: auto;padding: 60px 30px;}
+    .hero-title {font-size: 4.040vw;line-height: 1.2;}
+    .hero-description {font-size: 16px;}
+    .hero-buttons {gap: 20px;max-width: 500px;}
+}
+@media (max-width: 767px) {
+    .home-banner {height: auto;padding: 50px 20px;}
+    .hero-content {gap: 20px;}
+    .hero-title {font-size: 5.2155vw;}
+    .hero-description {font-size: 16px;}
+	.btn-started, .btn-more {font-size: 16px;}
+    .hero-buttons {gap: 15px;}
+    .exp-number {font-size: 8vw;}
+	.exp-text {font-size: 4vw;}
+}
